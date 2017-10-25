@@ -1,0 +1,36 @@
+{
+    "name": "control4",
+    "displayName": "Control4",
+    "description": "Implements autocompletion for Control4 functions and adds utilities for creating Control4 drivers.",
+    "version": "0.0.1",
+    "publisher": "Ryan Boucher",
+    "engines": {
+        "vscode": "^1.17.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:lua"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [{
+            "command": "control4.package",
+            "title": "Package Driver"
+        }]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.5.3",
+        "vscode": "^1.1.5",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
