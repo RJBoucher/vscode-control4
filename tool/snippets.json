@@ -1,0 +1,1407 @@
+{
+  "C4:AddDevice": {
+    "body": "C4:AddDevice()",
+    "description": "UNDOC\n\nC4:AddDevice()",
+    "prefix": "C4:AddDevice"
+  },
+  "C4:AddDynamicBinding": {
+    "body": "C4:AddDynamicBinding( ${1:idBinding}, ${2:strType}, ${3:bIsProvider}, ${4:strName}, ${5:strClass}, ${6:[,bHidden]}, ${7:[,bAutoBind]} )",
+    "description": "UNK\n\nC4:AddDynamicBinding( ${1:idBinding}, ${2:strType}, ${3:bIsProvider}, ${4:strName}, ${5:strClass}, ${6:[,bHidden]}, ${7:[,bAutoBind]} )",
+    "prefix": "C4:AddDynamicBinding"
+  },
+  "C4:AddEvent": {
+    "body": "C4:AddEvent( ${1:nEventId}, ${2:strName}, ${3:strDescription} )",
+    "description": "2.8.0\n\nC4:AddEvent( ${1:nEventId}, ${2:strName}, ${3:strDescription} )",
+    "prefix": "C4:AddEvent"
+  },
+  "C4:AddTimer": {
+    "body": "C4:AddTimer( ${1:nInterval}, ${2:[,strUnits]}, ${3:[,bRepeat]} )",
+    "description": "UNK\n\nC4:AddTimer( ${1:nInterval}, ${2:[,strUnits]}, ${3:[,bRepeat]} )",
+    "prefix": "C4:AddTimer"
+  },
+  "C4:AddVariable": {
+    "body": "C4:AddVariable( ${1:strName}, ${2:strValue}, ${3:strVarType}, ${4:[,bReadOnly]}, ${5:[,bHidden]} )",
+    "description": "UNK\n\nC4:AddVariable( ${1:strName}, ${2:strValue}, ${3:strVarType}, ${4:[,bReadOnly]}, ${5:[,bHidden]} )",
+    "prefix": "C4:AddVariable"
+  },
+  "C4:AllowExecute": {
+    "body": "C4:AllowExecute( ${1:1}, ${2:or}, ${3:0} )",
+    "description": "2.6.0\n\nC4:AllowExecute( ${1:1}, ${2:or}, ${3:0} )",
+    "prefix": "C4:AllowExecute"
+  },
+  "C4:Base64Decode": {
+    "body": "C4:Base64Decode( ${1:strToDecode} )",
+    "description": "UNK\n\nC4:Base64Decode( ${1:strToDecode} )",
+    "prefix": "C4:Base64Decode"
+  },
+  "C4:Base64Encode": {
+    "body": "C4:Base64Encode( ${1:strToEncode} )",
+    "description": "UNK\n\nC4:Base64Encode( ${1:strToEncode} )",
+    "prefix": "C4:Base64Encode"
+  },
+  "C4:Bind": {
+    "body": "C4:Bind( ${1:idDeviceProvider}, ${2:idBindingProvider}, ${3:idDeviceConsumer}, ${4:idBindingConsumer}, ${5:strClass} )",
+    "description": "2.9.0\n\nC4:Bind( ${1:idDeviceProvider}, ${2:idBindingProvider}, ${3:idDeviceConsumer}, ${4:idBindingConsumer}, ${5:strClass} )",
+    "prefix": "C4:Bind"
+  },
+  "C4:CRC32": {
+    "body": "C4:CRC32()",
+    "description": "UNDOC\n\nC4:CRC32()",
+    "prefix": "C4:CRC32"
+  },
+  "C4:CallAsync": {
+    "body": "C4:CallAsync( ${1:fCallback} )",
+    "description": "2.7.0\n\nC4:CallAsync( ${1:fCallback} )",
+    "prefix": "C4:CallAsync"
+  },
+  "C4:CheckLicense": {
+    "body": "C4:CheckLicense( ${1:strLicense} )",
+    "description": "UNK\n\nC4:CheckLicense( ${1:strLicense} )",
+    "prefix": "C4:CheckLicense"
+  },
+  "C4:ConvertXMLToTable": {
+    "body": "C4:ConvertXMLToTable()",
+    "description": "UNDOC\n\nC4:ConvertXMLToTable()",
+    "prefix": "C4:ConvertXMLToTable"
+  },
+  "C4:CreateNetworkConnection( idBinding, strAddress, strConnectionTyp": {
+    "body": "C4:CreateNetworkConnection( idBinding, strAddress, strConnectionTyp()",
+    "description": "1.6.1\n\nC4:CreateNetworkConnection( idBinding, strAddress, strConnectionTyp()",
+    "prefix": "C4:CreateNetworkConnection( idBinding, strAddress, strConnectionTyp"
+  },
+  "C4:CreateServer": {
+    "body": "C4:CreateServer( ${1:nPort}, ${2:strDelimiter}, ${3:bUseUDP} )",
+    "description": "2.1.0\n\nC4:CreateServer( ${1:nPort}, ${2:strDelimiter}, ${3:bUseUDP} )",
+    "prefix": "C4:CreateServer"
+  },
+  "C4:CreateTCPClient": {
+    "body": "C4:CreateTCPClient()",
+    "description": "2.9.0\n\nC4:CreateTCPClient()",
+    "prefix": "C4:CreateTCPClient"
+  },
+  "C4:CreateTCPServer": {
+    "body": "C4:CreateTCPServer()",
+    "description": "2.9.0\n\nC4:CreateTCPServer()",
+    "prefix": "C4:CreateTCPServer"
+  },
+  "C4:DebugLog": {
+    "body": "C4:DebugLog( ${1:strLogText} )",
+    "description": "UNK\n\nC4:DebugLog( ${1:strLogText} )",
+    "prefix": "C4:DebugLog"
+  },
+  "C4:Decode": {
+    "body": "C4:Decode( ${1:strData}, ${2:strDataEncoding} )",
+    "description": "UNK\n\nC4:Decode( ${1:strData}, ${2:strDataEncoding} )",
+    "prefix": "C4:Decode"
+  },
+  "C4:DecodeHtmlEntities": {
+    "body": "C4:DecodeHtmlEntities()",
+    "description": "UNDOC\n\nC4:DecodeHtmlEntities()",
+    "prefix": "C4:DecodeHtmlEntities"
+  },
+  "C4:Decrypt": {
+    "body": "C4:Decrypt( ${1:strCipher}, ${2:strKey}, ${3:initVector}, ${4:strData}, ${5:[,tOptions]} )",
+    "description": "UNK\n\nC4:Decrypt( ${1:strCipher}, ${2:strKey}, ${3:initVector}, ${4:strData}, ${5:[,tOptions]} )",
+    "prefix": "C4:Decrypt"
+  },
+  "C4:DeleteEvent": {
+    "body": "C4:DeleteEvent( ${1:nEventId} )",
+    "description": "1.6.1\n\nC4:DeleteEvent( ${1:nEventId} )",
+    "prefix": "C4:DeleteEvent"
+  },
+  "C4:DeleteVariable": {
+    "body": "C4:DeleteVariable( ${1:strName} )",
+    "description": "1.6.1\n\nC4:DeleteVariable( ${1:strName} )",
+    "prefix": "C4:DeleteVariable"
+  },
+  "C4:DestroyServer": {
+    "body": "C4:DestroyServer( ${1:nPort} )",
+    "description": "2.1.0\n\nC4:DestroyServer( ${1:nPort} )",
+    "prefix": "C4:DestroyServer"
+  },
+  "C4:DisableRemoteDebugging": {
+    "body": "C4:DisableRemoteDebugging()",
+    "description": "1.6.1\n\nC4:DisableRemoteDebugging()",
+    "prefix": "C4:DisableRemoteDebugging"
+  },
+  "C4:DlnaBeginDiscovery": {
+    "body": "C4:DlnaBeginDiscovery()",
+    "description": "DEP 2.10.0\n\nC4:DlnaBeginDiscovery()",
+    "prefix": "C4:DlnaBeginDiscovery"
+  },
+  "C4:DlnaGetDeviceDetails": {
+    "body": "C4:DlnaGetDeviceDetails()",
+    "description": "DEP 2.10.0\n\nC4:DlnaGetDeviceDetails()",
+    "prefix": "C4:DlnaGetDeviceDetails"
+  },
+  "C4:DlnaGetDevices": {
+    "body": "C4:DlnaGetDevices()",
+    "description": "DEP 2.10.0\n\nC4:DlnaGetDevices()",
+    "prefix": "C4:DlnaGetDevices"
+  },
+  "C4:DlnaGetServices": {
+    "body": "C4:DlnaGetServices()",
+    "description": "DEP 2.10.0\n\nC4:DlnaGetServices()",
+    "prefix": "C4:DlnaGetServices"
+  },
+  "C4:DlnaServiceGetActionNames": {
+    "body": "C4:DlnaServiceGetActionNames()",
+    "description": "DEP 2.10.0\n\nC4:DlnaServiceGetActionNames()",
+    "prefix": "C4:DlnaServiceGetActionNames"
+  },
+  "C4:DlnaServiceGetVar": {
+    "body": "C4:DlnaServiceGetVar()",
+    "description": "DEP 2.10.0\n\nC4:DlnaServiceGetVar()",
+    "prefix": "C4:DlnaServiceGetVar"
+  },
+  "C4:DlnaServiceGetVarInfo": {
+    "body": "C4:DlnaServiceGetVarInfo()",
+    "description": "DEP 2.10.0\n\nC4:DlnaServiceGetVarInfo()",
+    "prefix": "C4:DlnaServiceGetVarInfo"
+  },
+  "C4:DlnaServiceGetVarNames": {
+    "body": "C4:DlnaServiceGetVarNames()",
+    "description": "DEP 2.10.0\n\nC4:DlnaServiceGetVarNames()",
+    "prefix": "C4:DlnaServiceGetVarNames"
+  },
+  "C4:DlnaServiceInvokeAction": {
+    "body": "C4:DlnaServiceInvokeAction()",
+    "description": "DEP 2.10.0\n\nC4:DlnaServiceInvokeAction()",
+    "prefix": "C4:DlnaServiceInvokeAction"
+  },
+  "C4:DlnaServiceSetVar": {
+    "body": "C4:DlnaServiceSetVar()",
+    "description": "DEP 2.10.0\n\nC4:DlnaServiceSetVar()",
+    "prefix": "C4:DlnaServiceSetVar"
+  },
+  "C4:DlnaServiceSubscribe": {
+    "body": "C4:DlnaServiceSubscribe()",
+    "description": "DEP 2.10.0\n\nC4:DlnaServiceSubscribe()",
+    "prefix": "C4:DlnaServiceSubscribe"
+  },
+  "C4:DlnaServiceUnsubscribe": {
+    "body": "C4:DlnaServiceUnsubscribe()",
+    "description": "DEP 2.10.0\n\nC4:DlnaServiceUnsubscribe()",
+    "prefix": "C4:DlnaServiceUnsubscribe"
+  },
+  "C4:DlnaStopDiscovery": {
+    "body": "C4:DlnaStopDiscovery()",
+    "description": "DEP 2.10.0\n\nC4:DlnaStopDiscovery()",
+    "prefix": "C4:DlnaStopDiscovery"
+  },
+  "C4:EnableCommand": {
+    "body": "C4:EnableCommand()",
+    "description": "UNDOC\n\nC4:EnableCommand()",
+    "prefix": "C4:EnableCommand"
+  },
+  "C4:EnableRemoteDebugging": {
+    "body": "C4:EnableRemoteDebugging( ${1:strHostAndPort} )",
+    "description": "1.6.1\n\nC4:EnableRemoteDebugging( ${1:strHostAndPort} )",
+    "prefix": "C4:EnableRemoteDebugging"
+  },
+  "C4:Encode": {
+    "body": "C4:Encode( ${1:strData}, ${2:strDataEncoding} )",
+    "description": "UNK\n\nC4:Encode( ${1:strData}, ${2:strDataEncoding} )",
+    "prefix": "C4:Encode"
+  },
+  "C4:Encrypt": {
+    "body": "C4:Encrypt( ${1:strCipher}, ${2:strKey}, ${3:initVector}, ${4:strData}, ${5:[,tOptions]} )",
+    "description": "UNK\n\nC4:Encrypt( ${1:strCipher}, ${2:strKey}, ${3:initVector}, ${4:strData}, ${5:[,tOptions]} )",
+    "prefix": "C4:Encrypt"
+  },
+  "C4:ErrorLog": {
+    "body": "C4:ErrorLog( ${1:strLogText} )",
+    "description": "UNK\n\nC4:ErrorLog( ${1:strLogText} )",
+    "prefix": "C4:ErrorLog"
+  },
+  "C4:EvaluateExpression": {
+    "body": "C4:EvaluateExpression( ${1:strLogic}, ${2:valueRight}, ${3:valueLeft} )",
+    "description": "2.10.0\n\nC4:EvaluateExpression( ${1:strLogic}, ${2:valueRight}, ${3:valueLeft} )",
+    "prefix": "C4:EvaluateExpression"
+  },
+  "C4:FileClose": {
+    "body": "C4:FileClose( ${1:handle} )",
+    "description": "UNK\n\nC4:FileClose( ${1:handle} )",
+    "prefix": "C4:FileClose"
+  },
+  "C4:FileDelete": {
+    "body": "C4:FileDelete( ${1:strFileName} )",
+    "description": "UNK\n\nC4:FileDelete( ${1:strFileName} )",
+    "prefix": "C4:FileDelete"
+  },
+  "C4:FileExists": {
+    "body": "C4:FileExists( ${1:strFileName} )",
+    "description": "UNK\n\nC4:FileExists( ${1:strFileName} )",
+    "prefix": "C4:FileExists"
+  },
+  "C4:FileFreeSpace": {
+    "body": "C4:FileFreeSpace( ${1:handle} )",
+    "description": "UNK\n\nC4:FileFreeSpace( ${1:handle} )",
+    "prefix": "C4:FileFreeSpace"
+  },
+  "C4:FileGetDir": {
+    "body": "C4:FileGetDir()",
+    "description": "UNDOC\n\nC4:FileGetDir()",
+    "prefix": "C4:FileGetDir"
+  },
+  "C4:FileGetName": {
+    "body": "C4:FileGetName( ${1:handle} )",
+    "description": "UNK\n\nC4:FileGetName( ${1:handle} )",
+    "prefix": "C4:FileGetName"
+  },
+  "C4:FileGetOpenedHandles": {
+    "body": "C4:FileGetOpenedHandles()",
+    "description": "UNDOC\n\nC4:FileGetOpenedHandles()",
+    "prefix": "C4:FileGetOpenedHandles"
+  },
+  "C4:FileGetPos": {
+    "body": "C4:FileGetPos( ${1:handle} )",
+    "description": "UNK\n\nC4:FileGetPos( ${1:handle} )",
+    "prefix": "C4:FileGetPos"
+  },
+  "C4:FileGetSize": {
+    "body": "C4:FileGetSize( ${1:handle} )",
+    "description": "UNK\n\nC4:FileGetSize( ${1:handle} )",
+    "prefix": "C4:FileGetSize"
+  },
+  "C4:FileIsValid": {
+    "body": "C4:FileIsValid( ${1:handle} )",
+    "description": "UNK\n\nC4:FileIsValid( ${1:handle} )",
+    "prefix": "C4:FileIsValid"
+  },
+  "C4:FileList": {
+    "body": "C4:FileList()",
+    "description": "UNK\n\nC4:FileList()",
+    "prefix": "C4:FileList"
+  },
+  "C4:FileOpen": {
+    "body": "C4:FileOpen( ${1:strFileName} )",
+    "description": "UNK\n\nC4:FileOpen( ${1:strFileName} )",
+    "prefix": "C4:FileOpen"
+  },
+  "C4:FileRead": {
+    "body": "C4:FileRead( ${1:handle}, ${2:nBytesToRead} )",
+    "description": "UNK\n\nC4:FileRead( ${1:handle}, ${2:nBytesToRead} )",
+    "prefix": "C4:FileRead"
+  },
+  "C4:FileSetDir": {
+    "body": "C4:FileSetDir()",
+    "description": "UNDOC\n\nC4:FileSetDir()",
+    "prefix": "C4:FileSetDir"
+  },
+  "C4:FileSetPos": {
+    "body": "C4:FileSetPos( ${1:handle}, ${2:nPos} )",
+    "description": "UNK\n\nC4:FileSetPos( ${1:handle}, ${2:nPos} )",
+    "prefix": "C4:FileSetPos"
+  },
+  "C4:FileWrite": {
+    "body": "C4:FileWrite( ${1:handle}, ${2:nLength}, ${3:strData} )",
+    "description": "UNK\n\nC4:FileWrite( ${1:handle}, ${2:nLength}, ${3:strData} )",
+    "prefix": "C4:FileWrite"
+  },
+  "C4:FileWriteString": {
+    "body": "C4:FileWriteString( ${1:handle}, ${2:strData} )",
+    "description": "UNK\n\nC4:FileWriteString( ${1:handle}, ${2:strData} )",
+    "prefix": "C4:FileWriteString"
+  },
+  "C4:FireEvent": {
+    "body": "C4:FireEvent( ${1:strEvent} )",
+    "description": "UNK\n\nC4:FireEvent( ${1:strEvent} )",
+    "prefix": "C4:FireEvent"
+  },
+  "C4:FireEventByID": {
+    "body": "C4:FireEventByID( ${1:nEventId} )",
+    "description": "UNK\n\nC4:FireEventByID( ${1:nEventId} )",
+    "prefix": "C4:FireEventByID"
+  },
+  "C4:GenerateMD5String": {
+    "body": "C4:GenerateMD5String()",
+    "description": "UNDOC\n\nC4:GenerateMD5String()",
+    "prefix": "C4:GenerateMD5String"
+  },
+  "C4:GetBindingAddress": {
+    "body": "C4:GetBindingAddress( ${1:nBinding} )",
+    "description": "UNK\n\nC4:GetBindingAddress( ${1:nBinding} )",
+    "prefix": "C4:GetBindingAddress"
+  },
+  "C4:GetBlobByName": {
+    "body": "C4:GetBlobByName( ${1:strName} )",
+    "description": "1.8.0\n\nC4:GetBlobByName( ${1:strName} )",
+    "prefix": "C4:GetBlobByName"
+  },
+  "C4:GetBoundConsumerDevices": {
+    "body": "C4:GetBoundConsumerDevices( ${1:nDeviceId}, ${2:nBindingId} )",
+    "description": "UNK\n\nC4:GetBoundConsumerDevices( ${1:nDeviceId}, ${2:nBindingId} )",
+    "prefix": "C4:GetBoundConsumerDevices"
+  },
+  "C4:GetBoundProviderBinding": {
+    "body": "C4:GetBoundProviderBinding()",
+    "description": "UNDOC\n\nC4:GetBoundProviderBinding()",
+    "prefix": "C4:GetBoundProviderBinding"
+  },
+  "C4:GetBoundProviderDevice": {
+    "body": "C4:GetBoundProviderDevice( ${1:nDeviceId}, ${2:nBindingId} )",
+    "description": "UNK\n\nC4:GetBoundProviderDevice( ${1:nDeviceId}, ${2:nBindingId} )",
+    "prefix": "C4:GetBoundProviderDevice"
+  },
+  "C4:GetC4iDir": {
+    "body": "C4:GetC4iDir()",
+    "description": "2.10.0\n\nC4:GetC4iDir()",
+    "prefix": "C4:GetC4iDir"
+  },
+  "C4:GetC4zDir": {
+    "body": "C4:GetC4zDir()",
+    "description": "2.10.0\n\nC4:GetC4zDir()",
+    "prefix": "C4:GetC4zDir"
+  },
+  "C4:GetCapability": {
+    "body": "C4:GetCapability( ${1:strName} )",
+    "description": "UNK\n\nC4:GetCapability( ${1:strName} )",
+    "prefix": "C4:GetCapability"
+  },
+  "C4:GetControllerNetworkAddress": {
+    "body": "C4:GetControllerNetworkAddress()",
+    "description": "UNK\n\nC4:GetControllerNetworkAddress()",
+    "prefix": "C4:GetControllerNetworkAddress"
+  },
+  "C4:GetDeviceData": {
+    "body": "C4:GetDeviceData()",
+    "description": "2.10.0\n\nC4:GetDeviceData()",
+    "prefix": "C4:GetDeviceData"
+  },
+  "C4:GetDeviceDisplayName": {
+    "body": "C4:GetDeviceDisplayName( ${1:nDeviceId} )",
+    "description": "UNK\n\nC4:GetDeviceDisplayName( ${1:nDeviceId} )",
+    "prefix": "C4:GetDeviceDisplayName"
+  },
+  "C4:GetDeviceID": {
+    "body": "C4:GetDeviceID()",
+    "description": "UNK\n\nC4:GetDeviceID()",
+    "prefix": "C4:GetDeviceID"
+  },
+  "C4:GetDeviceMAC": {
+    "body": "C4:GetDeviceMAC()",
+    "description": "UNK\n\nC4:GetDeviceMAC()",
+    "prefix": "C4:GetDeviceMAC"
+  },
+  "C4:GetDeviceVariable": {
+    "body": "C4:GetDeviceVariable( ${1:nDeviceId}, ${2:nVariableId} )",
+    "description": "UNK\n\nC4:GetDeviceVariable( ${1:nDeviceId}, ${2:nVariableId} )",
+    "prefix": "C4:GetDeviceVariable"
+  },
+  "C4:GetDeviceVariables": {
+    "body": "C4:GetDeviceVariables( ${1:nDeviceId} )",
+    "description": "2.8.0\n\nC4:GetDeviceVariables( ${1:nDeviceId} )",
+    "prefix": "C4:GetDeviceVariables"
+  },
+  "C4:GetDevices": {
+    "body": "C4:GetDevices( ${1:tFilter} )",
+    "description": "2.10.0\n\nC4:GetDevices( ${1:tFilter} )",
+    "prefix": "C4:GetDevices"
+  },
+  "C4:GetDevicesByC4iName": {
+    "body": "C4:GetDevicesByC4iName()",
+    "description": "2.10.0\n\nC4:GetDevicesByC4iName()",
+    "prefix": "C4:GetDevicesByC4iName"
+  },
+  "C4:GetDevicesByName": {
+    "body": "C4:GetDevicesByName()",
+    "description": "2.10.0\n\nC4:GetDevicesByName()",
+    "prefix": "C4:GetDevicesByName"
+  },
+  "C4:GetDiscoveryInfo": {
+    "body": "C4:GetDiscoveryInfo()",
+    "description": "UNDOC\n\nC4:GetDiscoveryInfo()",
+    "prefix": "C4:GetDiscoveryInfo"
+  },
+  "C4:GetDriverConfigInfo": {
+    "body": "C4:GetDriverConfigInfo( ${1:strXMLTagName} )",
+    "description": "2.8.0\n\nC4:GetDriverConfigInfo( ${1:strXMLTagName} )",
+    "prefix": "C4:GetDriverConfigInfo"
+  },
+  "C4:GetInPort": {
+    "body": "C4:GetInPort()",
+    "description": "UNDOC\n\nC4:GetInPort()",
+    "prefix": "C4:GetInPort"
+  },
+  "C4:GetLocale": {
+    "body": "C4:GetLocale()",
+    "description": "UNK\n\nC4:GetLocale()",
+    "prefix": "C4:GetLocale"
+  },
+  "C4:GetLogDir": {
+    "body": "C4:GetLogDir()",
+    "description": "2.10.0\n\nC4:GetLogDir()",
+    "prefix": "C4:GetLogDir"
+  },
+  "C4:GetMediaImagesDir": {
+    "body": "C4:GetMediaImagesDir()",
+    "description": "UNK\n\nC4:GetMediaImagesDir()",
+    "prefix": "C4:GetMediaImagesDir"
+  },
+  "C4:GetMyNetworkAddress": {
+    "body": "C4:GetMyNetworkAddress()",
+    "description": "UNK\n\nC4:GetMyNetworkAddress()",
+    "prefix": "C4:GetMyNetworkAddress"
+  },
+  "C4:GetProjectHierarchy": {
+    "body": "C4:GetProjectHierarchy()",
+    "description": "2.10.0\n\nC4:GetProjectHierarchy()",
+    "prefix": "C4:GetProjectHierarchy"
+  },
+  "C4:GetProjectItems": {
+    "body": "C4:GetProjectItems()",
+    "description": "1.6.1\n\nC4:GetProjectItems()",
+    "prefix": "C4:GetProjectItems"
+  },
+  "C4:GetProxyDevices": {
+    "body": "C4:GetProxyDevices()",
+    "description": "UNK\n\nC4:GetProxyDevices()",
+    "prefix": "C4:GetProxyDevices"
+  },
+  "C4:GetProxyDevicesById": {
+    "body": "C4:GetProxyDevicesById()",
+    "description": "UNK\n\nC4:GetProxyDevicesById()",
+    "prefix": "C4:GetProxyDevicesById"
+  },
+  "C4:GetProxyDevicesByName": {
+    "body": "C4:GetProxyDevicesByName()",
+    "description": "UNK\n\nC4:GetProxyDevicesByName()",
+    "prefix": "C4:GetProxyDevicesByName"
+  },
+  "C4:GetPushSettings": {
+    "body": "C4:GetPushSettings()",
+    "description": "2.7.0\n\nC4:GetPushSettings()",
+    "prefix": "C4:GetPushSettings"
+  },
+  "C4:GetSandboxDir": {
+    "body": "C4:GetSandboxDir()",
+    "description": "2.10.0\n\nC4:GetSandboxDir()",
+    "prefix": "C4:GetSandboxDir"
+  },
+  "C4:GetSerialSettings": {
+    "body": "C4:GetSerialSettings()",
+    "description": "UNK\n\nC4:GetSerialSettings()",
+    "prefix": "C4:GetSerialSettings"
+  },
+  "C4:GetSupportedCiphers": {
+    "body": "C4:GetSupportedCiphers()",
+    "description": "UNK\n\nC4:GetSupportedCiphers()",
+    "prefix": "C4:GetSupportedCiphers"
+  },
+  "C4:GetSupportedDigests": {
+    "body": "C4:GetSupportedDigests()",
+    "description": "UNK\n\nC4:GetSupportedDigests()",
+    "prefix": "C4:GetSupportedDigests"
+  },
+  "C4:GetSystemType": {
+    "body": "C4:GetSystemType()",
+    "description": "2.9.0\n\nC4:GetSystemType()",
+    "prefix": "C4:GetSystemType"
+  },
+  "C4:GetTemperatureScale": {
+    "body": "C4:GetTemperatureScale()",
+    "description": "UNDOC\n\nC4:GetTemperatureScale()",
+    "prefix": "C4:GetTemperatureScale"
+  },
+  "C4:GetText": {
+    "body": "C4:GetText( ${1:strToTranslate} )",
+    "description": "UNK\n\nC4:GetText( ${1:strToTranslate} )",
+    "prefix": "C4:GetText"
+  },
+  "C4:GetTickCount": {
+    "body": "C4:GetTickCount()",
+    "description": "UNDOC\n\nC4:GetTickCount()",
+    "prefix": "C4:GetTickCount"
+  },
+  "C4:GetUniqueMAC": {
+    "body": "C4:GetUniqueMAC()",
+    "description": "1.6.1\n\nC4:GetUniqueMAC()",
+    "prefix": "C4:GetUniqueMAC"
+  },
+  "C4:GetVariable": {
+    "body": "C4:GetVariable( ${1:nDeviceId}, ${2:nVariableId} )",
+    "description": "UNK\n\nC4:GetVariable( ${1:nDeviceId}, ${2:nVariableId} )",
+    "prefix": "C4:GetVariable"
+  },
+  "C4:GetVersionInfo": {
+    "body": "C4:GetVersionInfo()",
+    "description": "1.6.1\n\nC4:GetVersionInfo()",
+    "prefix": "C4:GetVersionInfo"
+  },
+  "C4:GetZigbeeEUID": {
+    "body": "C4:GetZigbeeEUID()",
+    "description": "1.8.0\n\nC4:GetZigbeeEUID()",
+    "prefix": "C4:GetZigbeeEUID"
+  },
+  "C4:GetZnodeInfo": {
+    "body": "C4:GetZnodeInfo()",
+    "description": "UNDOC\n\nC4:GetZnodeInfo()",
+    "prefix": "C4:GetZnodeInfo"
+  },
+  "C4:HMAC": {
+    "body": "C4:HMAC( ${1:strDigest}, ${2:strKey}, ${3:strData}, ${4:[,tOptions]} )",
+    "description": "UNK\n\nC4:HMAC( ${1:strDigest}, ${2:strKey}, ${3:strData}, ${4:[,tOptions]} )",
+    "prefix": "C4:HMAC"
+  },
+  "C4:Hash": {
+    "body": "C4:Hash( ${1:strDigest}, ${2:strData}, ${3:tOptions} )",
+    "description": "UNK\n\nC4:Hash( ${1:strDigest}, ${2:strData}, ${3:tOptions} )",
+    "prefix": "C4:Hash"
+  },
+  "C4:InvalidateState": {
+    "body": "C4:InvalidateState()",
+    "description": "1.6.1\n\nC4:InvalidateState()",
+    "prefix": "C4:InvalidateState"
+  },
+  "C4:JsonDecode": {
+    "body": "C4:JsonDecode( ${1:data}, ${2:[,bPretty]}, ${3:[,bEncodeArrays]}, ${4:[,bSymmetric]} )",
+    "description": "UNK\n\nC4:JsonDecode( ${1:data}, ${2:[,bPretty]}, ${3:[,bEncodeArrays]}, ${4:[,bSymmetric]} )",
+    "prefix": "C4:JsonDecode"
+  },
+  "C4:JsonEncode": {
+    "body": "C4:JsonEncode( ${1:strJson} )",
+    "description": "UNK\n\nC4:JsonEncode( ${1:strJson} )",
+    "prefix": "C4:JsonEncode"
+  },
+  "C4:KeepReflashLock": {
+    "body": "C4:KeepReflashLock()",
+    "description": "1.8.0\n\nC4:KeepReflashLock()",
+    "prefix": "C4:KeepReflashLock"
+  },
+  "C4:KillTimer": {
+    "body": "C4:KillTimer( ${1:idTimer} )",
+    "description": "1.6.1\n\nC4:KillTimer( ${1:idTimer} )",
+    "prefix": "C4:KillTimer"
+  },
+  "C4:ListGetDeviceContainer": {
+    "body": "C4:ListGetDeviceContainer( ${1:nDeviceId} )",
+    "description": "1.6.1\n\nC4:ListGetDeviceContainer( ${1:nDeviceId} )",
+    "prefix": "C4:ListGetDeviceContainer"
+  },
+  "C4:ListGetDeviceName": {
+    "body": "C4:ListGetDeviceName( ${1:nDeviceId} )",
+    "description": "1.6.1\n\nC4:ListGetDeviceName( ${1:nDeviceId} )",
+    "prefix": "C4:ListGetDeviceName"
+  },
+  "C4:ListGetItems( nListID, nStartIndex, nCoun": {
+    "body": "C4:ListGetItems( nListID, nStartIndex, nCoun()",
+    "description": "1.6.1\n\nC4:ListGetItems( nListID, nStartIndex, nCoun()",
+    "prefix": "C4:ListGetItems( nListID, nStartIndex, nCoun"
+  },
+  "C4:ListGetRoomID": {
+    "body": "C4:ListGetRoomID()",
+    "description": "1.6.1\n\nC4:ListGetRoomID()",
+    "prefix": "C4:ListGetRoomID"
+  },
+  "C4:ListGetSelectedDevice": {
+    "body": "C4:ListGetSelectedDevice()",
+    "description": "1.6.1\n\nC4:ListGetSelectedDevice()",
+    "prefix": "C4:ListGetSelectedDevice"
+  },
+  "C4:ListGoToRoot": {
+    "body": "C4:ListGoToRoot()",
+    "description": "1.6.1\n\nC4:ListGoToRoot()",
+    "prefix": "C4:ListGoToRoot"
+  },
+  "C4:ListIsInNavigation": {
+    "body": "C4:ListIsInNavigation()",
+    "description": "1.6.1\n\nC4:ListIsInNavigation()",
+    "prefix": "C4:ListIsInNavigation"
+  },
+  "C4:ListIsStarted": {
+    "body": "C4:ListIsStarted()",
+    "description": "1.6.1\n\nC4:ListIsStarted()",
+    "prefix": "C4:ListIsStarted"
+  },
+  "C4:ListSendCommand": {
+    "body": "C4:ListSendCommand( ${1:strCommand}, ${2:Param1}, ${3:Param2} )",
+    "description": "1.6.1\n\nC4:ListSendCommand( ${1:strCommand}, ${2:Param1}, ${3:Param2} )",
+    "prefix": "C4:ListSendCommand"
+  },
+  "C4:ListSetCapabilities": {
+    "body": "C4:ListSetCapabilities( ${1:nMaxListCacheSize}, ${2:nMaxListItemLen}, ${3:nControl}, ${4:nControl} )",
+    "description": "1.6.1\n\nC4:ListSetCapabilities( ${1:nMaxListCacheSize}, ${2:nMaxListItemLen}, ${3:nControl}, ${4:nControl} )",
+    "prefix": "C4:ListSetCapabilities"
+  },
+  "C4:ListStart": {
+    "body": "C4:ListStart( ${1:[,strContainer]} )",
+    "description": "1.6.1\n\nC4:ListStart( ${1:[,strContainer]} )",
+    "prefix": "C4:ListStart"
+  },
+  "C4:ListStop": {
+    "body": "C4:ListStop()",
+    "description": "1.6.1\n\nC4:ListStop()",
+    "prefix": "C4:ListStop"
+  },
+  "C4:MediaAddAlbumInfo": {
+    "body": "C4:MediaAddAlbumInfo( ${1:strLocation}, ${2:strTitle}, ${3:tAlbumData} )",
+    "description": "UNK\n\nC4:MediaAddAlbumInfo( ${1:strLocation}, ${2:strTitle}, ${3:tAlbumData} )",
+    "prefix": "C4:MediaAddAlbumInfo"
+  },
+  "C4:MediaAddBroadcastAudioInfo": {
+    "body": "C4:MediaAddBroadcastAudioInfo()",
+    "description": "UNK\n\nC4:MediaAddBroadcastAudioInfo()",
+    "prefix": "C4:MediaAddBroadcastAudioInfo"
+  },
+  "C4:MediaAddBroadcastVideoInfo": {
+    "body": "C4:MediaAddBroadcastVideoInfo()",
+    "description": "UNK\n\nC4:MediaAddBroadcastVideoInfo()",
+    "prefix": "C4:MediaAddBroadcastVideoInfo"
+  },
+  "C4:MediaAddMovieInfo": {
+    "body": "C4:MediaAddMovieInfo()",
+    "description": "UNK\n\nC4:MediaAddMovieInfo()",
+    "prefix": "C4:MediaAddMovieInfo"
+  },
+  "C4:MediaAddToPlaylist": {
+    "body": "C4:MediaAddToPlaylist()",
+    "description": "UNK\n\nC4:MediaAddToPlaylist()",
+    "prefix": "C4:MediaAddToPlaylist"
+  },
+  "C4:MediaCreatePlaylist": {
+    "body": "C4:MediaCreatePlaylist()",
+    "description": "UNK\n\nC4:MediaCreatePlaylist()",
+    "prefix": "C4:MediaCreatePlaylist"
+  },
+  "C4:MediaGetAlbumInfo": {
+    "body": "C4:MediaGetAlbumInfo()",
+    "description": "UNK\n\nC4:MediaGetAlbumInfo()",
+    "prefix": "C4:MediaGetAlbumInfo"
+  },
+  "C4:MediaGetAlbumLocation": {
+    "body": "C4:MediaGetAlbumLocation()",
+    "description": "UNK\n\nC4:MediaGetAlbumLocation()",
+    "prefix": "C4:MediaGetAlbumLocation"
+  },
+  "C4:MediaGetAllAlbums": {
+    "body": "C4:MediaGetAllAlbums()",
+    "description": "UNK\n\nC4:MediaGetAllAlbums()",
+    "prefix": "C4:MediaGetAllAlbums"
+  },
+  "C4:MediaGetAllBroadcastAudio": {
+    "body": "C4:MediaGetAllBroadcastAudio()",
+    "description": "UNK\n\nC4:MediaGetAllBroadcastAudio()",
+    "prefix": "C4:MediaGetAllBroadcastAudio"
+  },
+  "C4:MediaGetAllBroadcastVideo": {
+    "body": "C4:MediaGetAllBroadcastVideo()",
+    "description": "UNK\n\nC4:MediaGetAllBroadcastVideo()",
+    "prefix": "C4:MediaGetAllBroadcastVideo"
+  },
+  "C4:MediaGetAllMovies": {
+    "body": "C4:MediaGetAllMovies()",
+    "description": "UNK\n\nC4:MediaGetAllMovies()",
+    "prefix": "C4:MediaGetAllMovies"
+  },
+  "C4:MediaGetBroadcastAudioInfo": {
+    "body": "C4:MediaGetBroadcastAudioInfo()",
+    "description": "UNK\n\nC4:MediaGetBroadcastAudioInfo()",
+    "prefix": "C4:MediaGetBroadcastAudioInfo"
+  },
+  "C4:MediaGetBroadcastVideoInfo": {
+    "body": "C4:MediaGetBroadcastVideoInfo()",
+    "description": "UNK\n\nC4:MediaGetBroadcastVideoInfo()",
+    "prefix": "C4:MediaGetBroadcastVideoInfo"
+  },
+  "C4:MediaGetDeviceContext": {
+    "body": "C4:MediaGetDeviceContext()",
+    "description": "UNK\n\nC4:MediaGetDeviceContext()",
+    "prefix": "C4:MediaGetDeviceContext"
+  },
+  "C4:MediaGetMovieInfo": {
+    "body": "C4:MediaGetMovieInfo()",
+    "description": "UNK\n\nC4:MediaGetMovieInfo()",
+    "prefix": "C4:MediaGetMovieInfo"
+  },
+  "C4:MediaGetMovieLocation": {
+    "body": "C4:MediaGetMovieLocation()",
+    "description": "UNK\n\nC4:MediaGetMovieLocation()",
+    "prefix": "C4:MediaGetMovieLocation"
+  },
+  "C4:MediaGetSongInfo": {
+    "body": "C4:MediaGetSongInfo()",
+    "description": "UNK\n\nC4:MediaGetSongInfo()",
+    "prefix": "C4:MediaGetSongInfo"
+  },
+  "C4:MediaGetSongLocation": {
+    "body": "C4:MediaGetSongLocation()",
+    "description": "UNK\n\nC4:MediaGetSongLocation()",
+    "prefix": "C4:MediaGetSongLocation"
+  },
+  "C4:MediaGetSongsForAlbum": {
+    "body": "C4:MediaGetSongsForAlbum()",
+    "description": "UNK\n\nC4:MediaGetSongsForAlbum()",
+    "prefix": "C4:MediaGetSongsForAlbum"
+  },
+  "C4:MediaModifyAlbumInfo": {
+    "body": "C4:MediaModifyAlbumInfo()",
+    "description": "UNK\n\nC4:MediaModifyAlbumInfo()",
+    "prefix": "C4:MediaModifyAlbumInfo"
+  },
+  "C4:MediaModifyMovieInfo": {
+    "body": "C4:MediaModifyMovieInfo()",
+    "description": "UNK\n\nC4:MediaModifyMovieInfo()",
+    "prefix": "C4:MediaModifyMovieInfo"
+  },
+  "C4:MediaModifySongInfo": {
+    "body": "C4:MediaModifySongInfo()",
+    "description": "UNK\n\nC4:MediaModifySongInfo()",
+    "prefix": "C4:MediaModifySongInfo"
+  },
+  "C4:MediaRemoveAlbum": {
+    "body": "C4:MediaRemoveAlbum()",
+    "description": "UNK\n\nC4:MediaRemoveAlbum()",
+    "prefix": "C4:MediaRemoveAlbum"
+  },
+  "C4:MediaRemoveAllAlbums": {
+    "body": "C4:MediaRemoveAllAlbums()",
+    "description": "UNK\n\nC4:MediaRemoveAllAlbums()",
+    "prefix": "C4:MediaRemoveAllAlbums"
+  },
+  "C4:MediaRemoveAllMedia": {
+    "body": "C4:MediaRemoveAllMedia()",
+    "description": "UNK\n\nC4:MediaRemoveAllMedia()",
+    "prefix": "C4:MediaRemoveAllMedia"
+  },
+  "C4:MediaRemoveAllMovies": {
+    "body": "C4:MediaRemoveAllMovies()",
+    "description": "UNK\n\nC4:MediaRemoveAllMovies()",
+    "prefix": "C4:MediaRemoveAllMovies"
+  },
+  "C4:MediaRemoveAllPlaylists": {
+    "body": "C4:MediaRemoveAllPlaylists()",
+    "description": "UNK\n\nC4:MediaRemoveAllPlaylists()",
+    "prefix": "C4:MediaRemoveAllPlaylists"
+  },
+  "C4:MediaRemoveBroadcastAudio": {
+    "body": "C4:MediaRemoveBroadcastAudio()",
+    "description": "UNK\n\nC4:MediaRemoveBroadcastAudio()",
+    "prefix": "C4:MediaRemoveBroadcastAudio"
+  },
+  "C4:MediaRemoveBroadcastVideo": {
+    "body": "C4:MediaRemoveBroadcastVideo()",
+    "description": "UNK\n\nC4:MediaRemoveBroadcastVideo()",
+    "prefix": "C4:MediaRemoveBroadcastVideo"
+  },
+  "C4:MediaRemoveFromPlaylist": {
+    "body": "C4:MediaRemoveFromPlaylist()",
+    "description": "UNK\n\nC4:MediaRemoveFromPlaylist()",
+    "prefix": "C4:MediaRemoveFromPlaylist"
+  },
+  "C4:MediaRemoveMovie": {
+    "body": "C4:MediaRemoveMovie()",
+    "description": "UNK\n\nC4:MediaRemoveMovie()",
+    "prefix": "C4:MediaRemoveMovie"
+  },
+  "C4:MediaRemovePlaylist": {
+    "body": "C4:MediaRemovePlaylist()",
+    "description": "UNK\n\nC4:MediaRemovePlaylist()",
+    "prefix": "C4:MediaRemovePlaylist"
+  },
+  "C4:MediaRemoveSong": {
+    "body": "C4:MediaRemoveSong()",
+    "description": "UNK\n\nC4:MediaRemoveSong()",
+    "prefix": "C4:MediaRemoveSong"
+  },
+  "C4:MediaRenamePlaylist": {
+    "body": "C4:MediaRenamePlaylist()",
+    "description": "UNK\n\nC4:MediaRenamePlaylist()",
+    "prefix": "C4:MediaRenamePlaylist"
+  },
+  "C4:MediaSearch": {
+    "body": "C4:MediaSearch()",
+    "description": "UNK\n\nC4:MediaSearch()",
+    "prefix": "C4:MediaSearch"
+  },
+  "C4:MediaSetDeviceContext": {
+    "body": "C4:MediaSetDeviceContext()",
+    "description": "UNK\n\nC4:MediaSetDeviceContext()",
+    "prefix": "C4:MediaSetDeviceContext"
+  },
+  "C4:NetConnect": {
+    "body": "C4:NetConnect( ${1:idBinding}, ${2:nPort}, ${3:strIPType}, ${4:nGrowBytes}, ${5:strStart}, ${6:strEnd}, ${7:bSuppressConnectionEvents} )",
+    "description": "UNK\n\nC4:NetConnect( ${1:idBinding}, ${2:nPort}, ${3:strIPType}, ${4:nGrowBytes}, ${5:strStart}, ${6:strEnd}, ${7:bSuppressConnectionEvents} )",
+    "prefix": "C4:NetConnect"
+  },
+  "C4:NetDisconnect": {
+    "body": "C4:NetDisconnect( ${1:idBinding}, ${2:nPort} )",
+    "description": "UNK\n\nC4:NetDisconnect( ${1:idBinding}, ${2:nPort} )",
+    "prefix": "C4:NetDisconnect"
+  },
+  "C4:NetPortOptions": {
+    "body": "C4:NetPortOptions( ${1:idBinding}, ${2:nPort}, ${3:strIPType}, ${4:tPortParams} )",
+    "description": "UNK\n\nC4:NetPortOptions( ${1:idBinding}, ${2:nPort}, ${3:strIPType}, ${4:tPortParams} )",
+    "prefix": "C4:NetPortOptions"
+  },
+  "C4:NetReconnect": {
+    "body": "C4:NetReconnect()",
+    "description": "UNDOC\n\nC4:NetReconnect()",
+    "prefix": "C4:NetReconnect"
+  },
+  "C4:PBKDF2": {
+    "body": "C4:PBKDF2( ${1:strDigest}, ${2:strPassword}, ${3:strSalt}, ${4:nIterations}, ${5:nKeyLength}, ${6:[,tOptions]} )",
+    "description": "UNK\n\nC4:PBKDF2( ${1:strDigest}, ${2:strPassword}, ${3:strSalt}, ${4:nIterations}, ${5:nKeyLength}, ${6:[,tOptions]} )",
+    "prefix": "C4:PBKDF2"
+  },
+  "C4:ParseIso8601DateTime": {
+    "body": "C4:ParseIso8601DateTime( ${1:strDate}, ${2:[,bStrict]} )",
+    "description": "2.10.0\n\nC4:ParseIso8601DateTime( ${1:strDate}, ${2:[,bStrict]} )",
+    "prefix": "C4:ParseIso8601DateTime"
+  },
+  "C4:ParseXml": {
+    "body": "C4:ParseXml( ${1:strXML} )",
+    "description": "UNK\n\nC4:ParseXml( ${1:strXML} )",
+    "prefix": "C4:ParseXml"
+  },
+  "C4:PersistDeleteAll": {
+    "body": "C4:PersistDeleteAll()",
+    "description": "2.10.0\n\nC4:PersistDeleteAll()",
+    "prefix": "C4:PersistDeleteAll"
+  },
+  "C4:PersistDeleteValue": {
+    "body": "C4:PersistDeleteValue( ${1:strName} )",
+    "description": "2.10.0\n\nC4:PersistDeleteValue( ${1:strName} )",
+    "prefix": "C4:PersistDeleteValue"
+  },
+  "C4:PersistGetValue": {
+    "body": "C4:PersistGetValue( ${1:strName} )",
+    "description": "2.10.0\n\nC4:PersistGetValue( ${1:strName} )",
+    "prefix": "C4:PersistGetValue"
+  },
+  "C4:PersistSetValue": {
+    "body": "C4:PersistSetValue( ${1:strName}, ${2:strValue} )",
+    "description": "2.10.0\n\nC4:PersistSetValue( ${1:strName}, ${2:strValue} )",
+    "prefix": "C4:PersistSetValue"
+  },
+  "C4:RecordHistory": {
+    "body": "C4:RecordHistory()",
+    "description": "UNDOC\n\nC4:RecordHistory()",
+    "prefix": "C4:RecordHistory"
+  },
+  "C4:RegisterDeviceEvent": {
+    "body": "C4:RegisterDeviceEvent( ${1:nDeviceId}, ${2:nEventId} )",
+    "description": "2.9.0\n\nC4:RegisterDeviceEvent( ${1:nDeviceId}, ${2:nEventId} )",
+    "prefix": "C4:RegisterDeviceEvent"
+  },
+  "C4:RegisterSystemEvent": {
+    "body": "C4:RegisterSystemEvent( ${1:nDeviceId}, ${2:nEventId} )",
+    "description": "2.9.0\n\nC4:RegisterSystemEvent( ${1:nDeviceId}, ${2:nEventId} )",
+    "prefix": "C4:RegisterSystemEvent"
+  },
+  "C4:RegisterVariableListener": {
+    "body": "C4:RegisterVariableListener( ${1:nDeviceId}, ${2:idVariable} )",
+    "description": "UNK\n\nC4:RegisterVariableListener( ${1:nDeviceId}, ${2:idVariable} )",
+    "prefix": "C4:RegisterVariableListener"
+  },
+  "C4:ReleaseReflashLock": {
+    "body": "C4:ReleaseReflashLock()",
+    "description": "1.8.0\n\nC4:ReleaseReflashLock()",
+    "prefix": "C4:ReleaseReflashLock"
+  },
+  "C4:RemoveDynamicBinding": {
+    "body": "C4:RemoveDynamicBinding( ${1:nBinding} )",
+    "description": "UNK\n\nC4:RemoveDynamicBinding( ${1:nBinding} )",
+    "prefix": "C4:RemoveDynamicBinding"
+  },
+  "C4:RenameDevice": {
+    "body": "C4:RenameDevice( ${1:nDeviceId}, ${2:strName} )",
+    "description": "UNK\n\nC4:RenameDevice( ${1:nDeviceId}, ${2:strName} )",
+    "prefix": "C4:RenameDevice"
+  },
+  "C4:RequestReflashLock": {
+    "body": "C4:RequestReflashLock()",
+    "description": "1.8.0\n\nC4:RequestReflashLock()",
+    "prefix": "C4:RequestReflashLock"
+  },
+  "C4:RequireModule": {
+    "body": "C4:RequireModule()",
+    "description": "UNDOC\n\nC4:RequireModule()",
+    "prefix": "C4:RequireModule"
+  },
+  "C4:RoomGetAudioDevices": {
+    "body": "C4:RoomGetAudioDevices( ${1:idRoom} )",
+    "description": "UNDOC\n\nC4:RoomGetAudioDevices( ${1:idRoom} )",
+    "prefix": "C4:RoomGetAudioDevices"
+  },
+  "C4:RoomGetId": {
+    "body": "C4:RoomGetId()",
+    "description": "UNK\n\nC4:RoomGetId()",
+    "prefix": "C4:RoomGetId"
+  },
+  "C4:RoomGetMP3Devices": {
+    "body": "C4:RoomGetMP3Devices( ${1:idRoom} )",
+    "description": "UNDOC\n\nC4:RoomGetMP3Devices( ${1:idRoom} )",
+    "prefix": "C4:RoomGetMP3Devices"
+  },
+  "C4:RoomGetVideoAudioDevices": {
+    "body": "C4:RoomGetVideoAudioDevices( ${1:idRoom} )",
+    "description": "UNDOC\n\nC4:RoomGetVideoAudioDevices( ${1:idRoom} )",
+    "prefix": "C4:RoomGetVideoAudioDevices"
+  },
+  "C4:RoomGetVideoDevices": {
+    "body": "C4:RoomGetVideoDevices( ${1:idRoom} )",
+    "description": "UNDOC\n\nC4:RoomGetVideoDevices( ${1:idRoom} )",
+    "prefix": "C4:RoomGetVideoDevices"
+  },
+  "C4:RoomSelectNav": {
+    "body": "C4:RoomSelectNav( ${1:idRoom} )",
+    "description": "UNK\n\nC4:RoomSelectNav( ${1:idRoom} )",
+    "prefix": "C4:RoomSelectNav"
+  },
+  "C4:SendBroadcast": {
+    "body": "C4:SendBroadcast( ${1:strData}, ${2:nPort} )",
+    "description": "2.10.0\n\nC4:SendBroadcast( ${1:strData}, ${2:nPort} )",
+    "prefix": "C4:SendBroadcast"
+  },
+  "C4:SendDataToUI": {
+    "body": "C4:SendDataToUI()",
+    "description": "UNK\n\nC4:SendDataToUI()",
+    "prefix": "C4:SendDataToUI"
+  },
+  "C4:SendIR": {
+    "body": "C4:SendIR( ${1:idBinding}, ${2:idIRCode} )",
+    "description": "1.6.1\n\nC4:SendIR( ${1:idBinding}, ${2:idIRCode} )",
+    "prefix": "C4:SendIR"
+  },
+  "C4:SendIRStart": {
+    "body": "C4:SendIRStart( ${1:idBinding}, ${2:idIRCode} )",
+    "description": "1.6.1\n\nC4:SendIRStart( ${1:idBinding}, ${2:idIRCode} )",
+    "prefix": "C4:SendIRStart"
+  },
+  "C4:SendIRStop": {
+    "body": "C4:SendIRStop( ${1:idBinding}, ${2:idIRCode} )",
+    "description": "1.6.1\n\nC4:SendIRStop( ${1:idBinding}, ${2:idIRCode} )",
+    "prefix": "C4:SendIRStop"
+  },
+  "C4:SendToDevice": {
+    "body": "C4:SendToDevice( ${1:idDevice}, ${2:strCommand}, ${3:tParams}, ${4:[,bAllowEmptyValues]}, ${5:[,bLogCommand]} )",
+    "description": "1.6.1\n\nC4:SendToDevice( ${1:idDevice}, ${2:strCommand}, ${3:tParams}, ${4:[,bAllowEmptyValues]}, ${5:[,bLogCommand]} )",
+    "prefix": "C4:SendToDevice"
+  },
+  "C4:SendToDeviceByC4iName": {
+    "body": "C4:SendToDeviceByC4iName()",
+    "description": "UNDOC\n\nC4:SendToDeviceByC4iName()",
+    "prefix": "C4:SendToDeviceByC4iName"
+  },
+  "C4:SendToNetwork": {
+    "body": "C4:SendToNetwork( ${1:nBinding}, ${2:nPort}, ${3:strData} )",
+    "description": "1.6.1\n\nC4:SendToNetwork( ${1:nBinding}, ${2:nPort}, ${3:strData} )",
+    "prefix": "C4:SendToNetwork"
+  },
+  "C4:SendToProxy": {
+    "body": "C4:SendToProxy( ${1:idBinding}, ${2:strCommand}, ${3:tParams}, ${4:[,strMessage]}, ${5:[,allowEmptyValues]} )",
+    "description": "1.6.1\n\nC4:SendToProxy( ${1:idBinding}, ${2:strCommand}, ${3:tParams}, ${4:[,strMessage]}, ${5:[,allowEmptyValues]} )",
+    "prefix": "C4:SendToProxy"
+  },
+  "C4:SendToSerial": {
+    "body": "C4:SendToSerial( ${1:nBinding}, ${2:strData} )",
+    "description": "1.6.1\n\nC4:SendToSerial( ${1:nBinding}, ${2:strData} )",
+    "prefix": "C4:SendToSerial"
+  },
+  "C4:SendUIRequest": {
+    "body": "C4:SendUIRequest( ${1:nId}, ${2:strData}, ${3:tParams} )",
+    "description": "UNK\n\nC4:SendUIRequest( ${1:nId}, ${2:strData}, ${3:tParams} )",
+    "prefix": "C4:SendUIRequest"
+  },
+  "C4:SendWOL": {
+    "body": "C4:SendWOL( ${1:strMacAddress}, ${2:[,nPort]} )",
+    "description": "2.10.0\n\nC4:SendWOL( ${1:strMacAddress}, ${2:[,nPort]} )",
+    "prefix": "C4:SendWOL"
+  },
+  "C4:SendZigbeePacket": {
+    "body": "C4:SendZigbeePacket( ${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:nDestinationEndpoint} )",
+    "description": "UNK\n\nC4:SendZigbeePacket( ${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:nDestinationEndpoint} )",
+    "prefix": "C4:SendZigbeePacket"
+  },
+  "C4:ServerCloseClient": {
+    "body": "C4:ServerCloseClient( ${1:handle} )",
+    "description": "UNK\n\nC4:ServerCloseClient( ${1:handle} )",
+    "prefix": "C4:ServerCloseClient"
+  },
+  "C4:ServerSend": {
+    "body": "C4:ServerSend( ${1:handle}, ${2:strData} )",
+    "description": "UNK\n\nC4:ServerSend( ${1:handle}, ${2:strData} )",
+    "prefix": "C4:ServerSend"
+  },
+  "C4:SetBindingAddress": {
+    "body": "C4:SetBindingAddress( ${1:nBinding}, ${2:strIPAddress} )",
+    "description": "2.8.0\n\nC4:SetBindingAddress( ${1:nBinding}, ${2:strIPAddress} )",
+    "prefix": "C4:SetBindingAddress"
+  },
+  "C4:SetBindingStatus": {
+    "body": "C4:SetBindingStatus( ${1:nBinding}, ${2:strStatus} )",
+    "description": "2.10.0\n\nC4:SetBindingStatus( ${1:nBinding}, ${2:strStatus} )",
+    "prefix": "C4:SetBindingStatus"
+  },
+  "C4:SetDeviceVariable": {
+    "body": "C4:SetDeviceVariable( ${1:nDeviceID}, ${2:nVariableID}, ${3:strValue} )",
+    "description": "UNK\n\nC4:SetDeviceVariable( ${1:nDeviceID}, ${2:nVariableID}, ${3:strValue} )",
+    "prefix": "C4:SetDeviceVariable"
+  },
+  "C4:SetLicenseGuid": {
+    "body": "C4:SetLicenseGuid()",
+    "description": "UNDOC\n\nC4:SetLicenseGuid()",
+    "prefix": "C4:SetLicenseGuid"
+  },
+  "C4:SetLicenseInfo": {
+    "body": "C4:SetLicenseInfo()",
+    "description": "UNDOC\n\nC4:SetLicenseInfo()",
+    "prefix": "C4:SetLicenseInfo"
+  },
+  "C4:SetPropertyAttribs": {
+    "body": "C4:SetPropertyAttribs( ${1:strName}, ${2:bHide} )",
+    "description": "UNK\n\nC4:SetPropertyAttribs( ${1:strName}, ${2:bHide} )",
+    "prefix": "C4:SetPropertyAttribs"
+  },
+  "C4:SetTimer": {
+    "body": "C4:SetTimer( ${1:nDelay}, ${2:fCallback}, ${3:[,bRepeat]} )",
+    "description": "UNK\n\nC4:SetTimer( ${1:nDelay}, ${2:fCallback}, ${3:[,bRepeat]} )",
+    "prefix": "C4:SetTimer"
+  },
+  "C4:SetVariable": {
+    "body": "C4:SetVariable( ${1:strName}, ${2:strValue} )",
+    "description": "UNK\n\nC4:SetVariable( ${1:strName}, ${2:strValue} )",
+    "prefix": "C4:SetVariable"
+  },
+  "C4:TEADecrypt": {
+    "body": "C4:TEADecrypt( ${1:strData}, ${2:strKey} )",
+    "description": "UNK\n\nC4:TEADecrypt( ${1:strData}, ${2:strKey} )",
+    "prefix": "C4:TEADecrypt"
+  },
+  "C4:TEAEncrypt": {
+    "body": "C4:TEAEncrypt( ${1:strData}, ${2:strKey} )",
+    "description": "UNK\n\nC4:TEAEncrypt( ${1:strData}, ${2:strKey} )",
+    "prefix": "C4:TEAEncrypt"
+  },
+  "C4:Unbind": {
+    "body": "C4:Unbind( ${1:idDeviceConsumer}, ${2:idBindingConsumer} )",
+    "description": "2.9.0\n\nC4:Unbind( ${1:idDeviceConsumer}, ${2:idBindingConsumer} )",
+    "prefix": "C4:Unbind"
+  },
+  "C4:UnregisterAllDeviceEvents": {
+    "body": "C4:UnregisterAllDeviceEvents()",
+    "description": "2.9.0\n\nC4:UnregisterAllDeviceEvents()",
+    "prefix": "C4:UnregisterAllDeviceEvents"
+  },
+  "C4:UnregisterAllSystemEvents": {
+    "body": "C4:UnregisterAllSystemEvents()",
+    "description": "2.9.0\n\nC4:UnregisterAllSystemEvents()",
+    "prefix": "C4:UnregisterAllSystemEvents"
+  },
+  "C4:UnregisterDeviceEvent": {
+    "body": "C4:UnregisterDeviceEvent()",
+    "description": "2.9.0\n\nC4:UnregisterDeviceEvent()",
+    "prefix": "C4:UnregisterDeviceEvent"
+  },
+  "C4:UnregisterSystemEvent": {
+    "body": "C4:UnregisterSystemEvent()",
+    "description": "2.9.0\n\nC4:UnregisterSystemEvent()",
+    "prefix": "C4:UnregisterSystemEvent"
+  },
+  "C4:UnregisterVariableListener": {
+    "body": "C4:UnregisterVariableListener( ${1:nDeviceId}, ${2:idVariable} )",
+    "description": "UNK\n\nC4:UnregisterVariableListener( ${1:nDeviceId}, ${2:idVariable} )",
+    "prefix": "C4:UnregisterVariableListener"
+  },
+  "C4:UpdateProperty": {
+    "body": "C4:UpdateProperty( ${1:strName}, ${2:strValue} )",
+    "description": "UNK\n\nC4:UpdateProperty( ${1:strName}, ${2:strValue} )",
+    "prefix": "C4:UpdateProperty"
+  },
+  "C4:UpdatePropertyList": {
+    "body": "C4:UpdatePropertyList( ${1:strName}, ${2:strValue} )",
+    "description": "2.7.0\n\nC4:UpdatePropertyList( ${1:strName}, ${2:strValue} )",
+    "prefix": "C4:UpdatePropertyList"
+  },
+  "C4:UsbSerialGetDevices": {
+    "body": "C4:UsbSerialGetDevices()",
+    "description": "UNDOC\n\nC4:UsbSerialGetDevices()",
+    "prefix": "C4:UsbSerialGetDevices"
+  },
+  "C4:UsbSerialSetSerialSettings": {
+    "body": "C4:UsbSerialSetSerialSettings()",
+    "description": "UNDOC\n\nC4:UsbSerialSetSerialSettings()",
+    "prefix": "C4:UsbSerialSetSerialSettings"
+  },
+  "C4:XmlEscapeString": {
+    "body": "C4:XmlEscapeString( ${1:strData} )",
+    "description": "UNK\n\nC4:XmlEscapeString( ${1:strData} )",
+    "prefix": "C4:XmlEscapeString"
+  },
+  "C4:blowfishEcbDecrypt( strKey, encryptedDataToDecryp": {
+    "body": "C4:blowfishEcbDecrypt( strKey, encryptedDataToDecryp()",
+    "description": "UNK\n\nC4:blowfishEcbDecrypt( strKey, encryptedDataToDecryp()",
+    "prefix": "C4:blowfishEcbDecrypt( strKey, encryptedDataToDecryp"
+  },
+  "C4:blowfishEcbEncrypt( strKey, encryptedDataToEncryp": {
+    "body": "C4:blowfishEcbEncrypt( strKey, encryptedDataToEncryp()",
+    "description": "UNK\n\nC4:blowfishEcbEncrypt( strKey, encryptedDataToEncryp()",
+    "prefix": "C4:blowfishEcbEncrypt( strKey, encryptedDataToEncryp"
+  },
+  "C4:hton_l": {
+    "body": "C4:hton_l()",
+    "description": "UNDOC\n\nC4:hton_l()",
+    "prefix": "C4:hton_l"
+  },
+  "C4:print": {
+    "body": "C4:print( ${1:strData} )",
+    "description": "UNK\n\nC4:print( ${1:strData} )",
+    "prefix": "C4:print"
+  },
+  "C4:rawprint": {
+    "body": "C4:rawprint()",
+    "description": "UNDOC\n\nC4:rawprint()",
+    "prefix": "C4:rawprint"
+  },
+  "C4:urlCancel": {
+    "body": "C4:urlCancel( ${1:ticketId} )",
+    "description": "2.7.0\n\nC4:urlCancel( ${1:ticketId} )",
+    "prefix": "C4:urlCancel"
+  },
+  "C4:urlCancelAll": {
+    "body": "C4:urlCancelAll()",
+    "description": "2.8.1\n\nC4:urlCancelAll()",
+    "prefix": "C4:urlCancelAll"
+  },
+  "C4:urlClearCookies": {
+    "body": "C4:urlClearCookies()",
+    "description": "2.9.0\n\nC4:urlClearCookies()",
+    "prefix": "C4:urlClearCookies"
+  },
+  "C4:urlClearSessionCookies": {
+    "body": "C4:urlClearSessionCookies()",
+    "description": "2.9.0\n\nC4:urlClearSessionCookies()",
+    "prefix": "C4:urlClearSessionCookies"
+  },
+  "C4:urlCustom": {
+    "body": "C4:urlCustom( ${1:strUrl}, ${2:strMethod}, ${3:strData}, ${4:[,tHeaders]}, ${5:[,bFailOnHttpError]}, ${6:[,fCallback]} )",
+    "description": "2.9.0\n\nC4:urlCustom( ${1:strUrl}, ${2:strMethod}, ${3:strData}, ${4:[,tHeaders]}, ${5:[,bFailOnHttpError]}, ${6:[,fCallback]} )",
+    "prefix": "C4:urlCustom"
+  },
+  "C4:urlDelete": {
+    "body": "C4:urlDelete( ${1:strUrl}, ${2:[,tHeaders]}, ${3:[,bFailOnHttpError]}, ${4:[,fCallback]}, ${5:[,tParams]} )",
+    "description": "2.8.1\n\nC4:urlDelete( ${1:strUrl}, ${2:[,tHeaders]}, ${3:[,bFailOnHttpError]}, ${4:[,fCallback]}, ${5:[,tParams]} )",
+    "prefix": "C4:urlDelete"
+  },
+  "C4:urlGet": {
+    "body": "C4:urlGet( ${1:strUrl}, ${2:[,tHeaders]}, ${3:[,bFailOnHttpError]}, ${4:[,fCallback]}, ${5:[,tParams]} )",
+    "description": "2.8.1\n\nC4:urlGet( ${1:strUrl}, ${2:[,tHeaders]}, ${3:[,bFailOnHttpError]}, ${4:[,fCallback]}, ${5:[,tParams]} )",
+    "prefix": "C4:urlGet"
+  },
+  "C4:urlGetCookies": {
+    "body": "C4:urlGetCookies( ${1:[,strDomain]} )",
+    "description": "2.8.1\n\nC4:urlGetCookies( ${1:[,strDomain]} )",
+    "prefix": "C4:urlGetCookies"
+  },
+  "C4:urlGetCookiesForDomain": {
+    "body": "C4:urlGetCookiesForDomain( ${1:[,strDomain]} )",
+    "description": "2.8.1\n\nC4:urlGetCookiesForDomain( ${1:[,strDomain]} )",
+    "prefix": "C4:urlGetCookiesForDomain"
+  },
+  "C4:urlGetOption": {
+    "body": "C4:urlGetOption( ${1:strOption} )",
+    "description": "2.8.1\n\nC4:urlGetOption( ${1:strOption} )",
+    "prefix": "C4:urlGetOption"
+  },
+  "C4:urlGetTickets": {
+    "body": "C4:urlGetTickets()",
+    "description": "2.8.1\n\nC4:urlGetTickets()",
+    "prefix": "C4:urlGetTickets"
+  },
+  "C4:urlPost": {
+    "body": "C4:urlPost( ${1:strUrl}, ${2:[,tHeaders]}, ${3:[,bFailOnHttpError]}, ${4:[,fCallback]}, ${5:[,tParams]} )",
+    "description": "2.8.1\n\nC4:urlPost( ${1:strUrl}, ${2:[,tHeaders]}, ${3:[,bFailOnHttpError]}, ${4:[,fCallback]}, ${5:[,tParams]} )",
+    "prefix": "C4:urlPost"
+  },
+  "C4:urlPut": {
+    "body": "C4:urlPut( ${1:strUrl}, ${2:[,tHeaders]}, ${3:[,bFailOnHttpError]}, ${4:[,fCallback]}, ${5:[,tParams]} )",
+    "description": "2.8.1\n\nC4:urlPut( ${1:strUrl}, ${2:[,tHeaders]}, ${3:[,bFailOnHttpError]}, ${4:[,fCallback]}, ${5:[,tParams]} )",
+    "prefix": "C4:urlPut"
+  },
+  "C4:urlSetOption": {
+    "body": "C4:urlSetOption( ${1:strOption} )",
+    "description": "2.8.1\n\nC4:urlSetOption( ${1:strOption} )",
+    "prefix": "C4:urlSetOption"
+  },
+  "C4:urlSetProxy": {
+    "body": "C4:urlSetProxy( ${1:strURL}, ${2:nPort}, ${3:strUsername}, ${4:strPassword}, ${5:[,bFailOnHttpError]} )",
+    "description": "2.8.1\n\nC4:urlSetProxy( ${1:strURL}, ${2:nPort}, ${3:strUsername}, ${4:strPassword}, ${5:[,bFailOnHttpError]} )",
+    "prefix": "C4:urlSetProxy"
+  },
+  "C4:urlSetTimeout": {
+    "body": "C4:urlSetTimeout( ${1:nSeconds} )",
+    "description": "2.8.1\n\nC4:urlSetTimeout( ${1:nSeconds} )",
+    "prefix": "C4:urlSetTimeout"
+  },
+  "ExecuteCommand": {
+    "body": "ExecuteCommand( ${1:strCommand}, ${2:tParams} )",
+    "description": "1.6.1\n\nExecuteCommand( ${1:strCommand}, ${2:tParams} )",
+    "prefix": "ExecuteCommand"
+  },
+  "GetPrivateKeyPassword": {
+    "body": "GetPrivateKeyPassword()",
+    "description": "2.8.0\n\nGetPrivateKeyPassword()",
+    "prefix": "GetPrivateKeyPassword"
+  },
+  "ListEvent": {
+    "body": "ListEvent( ${1:strEvent}, ${2:strParam1}, ${3:strParam2} )",
+    "description": "1.6.1\n\nListEvent( ${1:strEvent}, ${2:strParam1}, ${3:strParam2} )",
+    "prefix": "ListEvent"
+  },
+  "ListMIBReceived": {
+    "body": "ListMIBReceived( ${1:strCommand}, ${2:nCount}, ${3:tParams} )",
+    "description": "1.6.1\n\nListMIBReceived( ${1:strCommand}, ${2:nCount}, ${3:tParams} )",
+    "prefix": "ListMIBReceived"
+  },
+  "ListNewControl": {
+    "body": "ListNewControl( ${1:strContainer}, ${2:strNavID}, ${3:idDevice}, ${4:tParams} )",
+    "description": "1.6.1\n\nListNewControl( ${1:strContainer}, ${2:strNavID}, ${3:idDevice}, ${4:tParams} )",
+    "prefix": "ListNewControl"
+  },
+  "ListNewList": {
+    "body": "ListNewList( ${1:nListID}, ${2:nItemCount}, ${3:strName}, ${4:nIndex}, ${5:strContainer}, ${6:strCategory}, ${7:strNavID} )",
+    "description": "1.6.1\n\nListNewList( ${1:nListID}, ${2:nItemCount}, ${3:strName}, ${4:nIndex}, ${5:strContainer}, ${6:strCategory}, ${7:strNavID} )",
+    "prefix": "ListNewList"
+  },
+  "OnBindingChanged": {
+    "body": "OnBindingChanged( ${1:nBinding}, ${2:strClass}, ${3:bIsBound} )",
+    "description": "1.6.1\n\nOnBindingChanged( ${1:nBinding}, ${2:strClass}, ${3:bIsBound} )",
+    "prefix": "OnBindingChanged"
+  },
+  "OnConnectionStatusChanged": {
+    "body": "OnConnectionStatusChanged( ${1:idBinding}, ${2:nPort}, ${3:strStatus} )",
+    "description": "UNK\n\nOnConnectionStatusChanged( ${1:idBinding}, ${2:nPort}, ${3:strStatus} )",
+    "prefix": "OnConnectionStatusChanged"
+  },
+  "OnDeviceEvent": {
+    "body": "OnDeviceEvent( ${1:nFiringDeviceId}, ${2:nEventId} )",
+    "description": "2.9.0\n\nOnDeviceEvent( ${1:nFiringDeviceId}, ${2:nEventId} )",
+    "prefix": "OnDeviceEvent"
+  },
+  "OnDriverDestroyed": {
+    "body": "OnDriverDestroyed()",
+    "description": "1.6.1\n\nOnDriverDestroyed()",
+    "prefix": "OnDriverDestroyed"
+  },
+  "OnDriverInit": {
+    "body": "OnDriverInit()",
+    "description": "1.6.1\n\nOnDriverInit()",
+    "prefix": "OnDriverInit"
+  },
+  "OnDriverLateInit": {
+    "body": "OnDriverLateInit()",
+    "description": "2.5.0\n\nOnDriverLateInit()",
+    "prefix": "OnDriverLateInit"
+  },
+  "OnNetworkBindingChanged": {
+    "body": "OnNetworkBindingChanged( ${1:idBinding}, ${2:bIsBound} )",
+    "description": "UNK\n\nOnNetworkBindingChanged( ${1:idBinding}, ${2:bIsBound} )",
+    "prefix": "OnNetworkBindingChanged"
+  },
+  "OnPropertyChanged": {
+    "body": "OnPropertyChanged( ${1:strName} )",
+    "description": "1.6.1\n\nOnPropertyChanged( ${1:strName} )",
+    "prefix": "OnPropertyChanged"
+  },
+  "OnReflashLockGranted": {
+    "body": "OnReflashLockGranted()",
+    "description": "1.8.0\n\nOnReflashLockGranted()",
+    "prefix": "OnReflashLockGranted"
+  },
+  "OnReflashLockRevoked": {
+    "body": "OnReflashLockRevoked()",
+    "description": "1.8.0\n\nOnReflashLockRevoked()",
+    "prefix": "OnReflashLockRevoked"
+  },
+  "OnServerConnectionStatusChanged": {
+    "body": "OnServerConnectionStatusChanged( ${1:nHandle}, ${2:nPort}, ${3:strStatus}, ${4:strIP} )",
+    "description": "UNK\n\nOnServerConnectionStatusChanged( ${1:nHandle}, ${2:nPort}, ${3:strStatus}, ${4:strIP} )",
+    "prefix": "OnServerConnectionStatusChanged"
+  },
+  "OnServerDataIn": {
+    "body": "OnServerDataIn( ${1:nHandle}, ${2:strData}, ${3:strclientAddress}, ${4:strPort} )",
+    "description": "UNK\n\nOnServerDataIn( ${1:nHandle}, ${2:strData}, ${3:strclientAddress}, ${4:strPort} )",
+    "prefix": "OnServerDataIn"
+  },
+  "OnSystemEvent": {
+    "body": "OnSystemEvent( ${1:strData} )",
+    "description": "UNK\n\nOnSystemEvent( ${1:strData} )",
+    "prefix": "OnSystemEvent"
+  },
+  "OnTimerExpired": {
+    "body": "OnTimerExpired( ${1:idTimer} )",
+    "description": "1.6.1\n\nOnTimerExpired( ${1:idTimer} )",
+    "prefix": "OnTimerExpired"
+  },
+  "OnVariableChanged": {
+    "body": "OnVariableChanged( ${1:strName} )",
+    "description": "1.6.1\n\nOnVariableChanged( ${1:strName} )",
+    "prefix": "OnVariableChanged"
+  },
+  "OnWatchedVariableChanged": {
+    "body": "OnWatchedVariableChanged( ${1:idDevice}, ${2:idVariable}, ${3:strValue} )",
+    "description": "UNK\n\nOnWatchedVariableChanged( ${1:idDevice}, ${2:idVariable}, ${3:strValue} )",
+    "prefix": "OnWatchedVariableChanged"
+  },
+  "OnZigbeeOnlineStatusChanged": {
+    "body": "OnZigbeeOnlineStatusChanged( ${1:strStatus}, ${2:strVersion}, ${3:strSkew} )",
+    "description": "1.6.1\n\nOnZigbeeOnlineStatusChanged( ${1:strStatus}, ${2:strVersion}, ${3:strSkew} )",
+    "prefix": "OnZigbeeOnlineStatusChanged"
+  },
+  "OnZigbeePacketFailed": {
+    "body": "OnZigbeePacketFailed( ${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:nDestinationEndpoint} )",
+    "description": "1.6.1\n\nOnZigbeePacketFailed( ${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:nDestinationEndpoint} )",
+    "prefix": "OnZigbeePacketFailed"
+  },
+  "OnZigbeePacketIn": {
+    "body": "OnZigbeePacketIn( ${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:nDestinationEndpoint} )",
+    "description": "1.6.1\n\nOnZigbeePacketIn( ${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:nDestinationEndpoint} )",
+    "prefix": "OnZigbeePacketIn"
+  },
+  "OnZigbeePacketSuccess": {
+    "body": "OnZigbeePacketSuccess( ${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:nDestinationEndpoint} )",
+    "description": "1.6.1\n\nOnZigbeePacketSuccess( ${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:nDestinationEndpoint} )",
+    "prefix": "OnZigbeePacketSuccess"
+  },
+  "ReceivedFromNetwork": {
+    "body": "ReceivedFromNetwork( ${1:idBinding}, ${2:nPort}, ${3:strData} )",
+    "description": "1.6.1\n\nReceivedFromNetwork( ${1:idBinding}, ${2:nPort}, ${3:strData} )",
+    "prefix": "ReceivedFromNetwork"
+  },
+  "ReceivedFromProxy": {
+    "body": "ReceivedFromProxy( ${1:idBinding}, ${2:strCommand}, ${3:tParams} )",
+    "description": "1.6.1\n\nReceivedFromProxy( ${1:idBinding}, ${2:strCommand}, ${3:tParams} )",
+    "prefix": "ReceivedFromProxy"
+  },
+  "ReceivedFromSerial": {
+    "body": "ReceivedFromSerial( ${1:idBinding}, ${2:strData} )",
+    "description": "1.6.1\n\nReceivedFromSerial( ${1:idBinding}, ${2:strData} )",
+    "prefix": "ReceivedFromSerial"
+  },
+  "SendZigbeePacket": {
+    "body": "SendZigbeePacket( ${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:nDestinationEndpoint} )",
+    "description": "1.6.1\n\nSendZigbeePacket( ${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:nDestinationEndpoint} )",
+    "prefix": "SendZigbeePacket"
+  },
+  "UIRequest": {
+    "body": "UIRequest( ${1:sRequest}, ${2:tParams} )",
+    "description": "UNK\n\nUIRequest( ${1:sRequest}, ${2:tParams} )",
+    "prefix": "UIRequest"
+  },
+  "hexdump": {
+    "body": "hexdump( ${1:strData} )",
+    "description": "1.6.1\n\nhexdump( ${1:strData} )",
+    "prefix": "hexdump"
+  },
+  "tohex": {
+    "body": "tohex( ${1:strData} )",
+    "description": "1.6.1\n\ntohex( ${1:strData} )",
+    "prefix": "tohex"
+  },
+  "tonumber_loc": {
+    "body": "tonumber_loc( ${1:strData} )",
+    "description": "UNK\n\ntonumber_loc( ${1:strData} )",
+    "prefix": "tonumber_loc"
+  }
+}
