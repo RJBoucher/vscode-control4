@@ -8,9 +8,7 @@ import * as f from './functions';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-    console.log("Activated");
-
-    context.subscriptions.push(vscode.languages.registerCompletionItemProvider("lua", new HooksCompletionProvider(), "."));
+    context.subscriptions.push(vscode.languages.registerCompletionItemProvider("lua", new HooksCompletionProvider(), ".", " "));
     context.subscriptions.push(vscode.languages.registerCompletionItemProvider("lua", new FunctionsCompletionProvider(), ":"));
 
     var cmd = vscode.commands.registerCommand('control4.package', () => {
@@ -52,12 +50,9 @@ class HooksCompletionProvider implements vscode.CompletionItemProvider, vscode.D
  * Provides completion suggestions for Control4 functions
  */
 class FunctionsCompletionProvider implements vscode.CompletionItemProvider, vscode.Disposable {
-    constructor() { 
-
-    }
+    constructor() { }
   
-    public dispose() {
-    }
+    public dispose() {}
   
     public provideCompletionItems(document: vscode.TextDocument, position: vscode.Position, token: vscode.CancellationToken, context: vscode.CompletionContext) {
         if (context.triggerKind == vscode.CompletionTriggerKind.Invoke) {

@@ -1,0 +1,324 @@
+[
+    {
+        "label": "Attach",
+        "insertText": "Attach()$0",
+        "documentation": "Function called by Director when remote debugging of the DriverWorks script has started. This API should not be invoked during OnDriverInit.\r\n    \r\nNone\r\n    \r\nNone",
+        "detail": "1.6.1",
+        "parameters": null,
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "ExecuteCommand",
+        "insertText": "ExecuteCommand()$0",
+        "documentation": "Function called by Director when a command is received for this DriverWorks driver. This includes commands created in Composer programming. This API should not be invoked during OnDriverInit.\r\n    \r\nPrint all commands received for this protocol driver, including all parameters:",
+        "detail": "1.6.1",
+        "parameters": null,
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnBindingChanged",
+        "insertText": "OnBindingChanged(${1:idBinding}, ${2:strClass}, ${3:bIsBound})$0",
+        "documentation": "Function called by Director when a binding changes state (bound or unbound).",
+        "detail": "1.6.1",
+        "parameters": [
+            "idBinding",
+            "strClass",
+            "bIsBound"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "ReceivedFromProxy",
+        "insertText": "ReceivedFromProxy(${1:idBinding}, ${2:strCommand}, ${3:tParams})$0",
+        "documentation": "Function called by Director when a proxy bound to the specified binding sends a BindMessage to the DriverWorks driver. \r\n\r\n    \r\nPrint all commands received from the proxy, including all parameters:",
+        "detail": "1.6.1",
+        "parameters": [
+            "idBinding",
+            "strCommand",
+            "tParams"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "ListMIBReceived",
+        "insertText": "ListMIBReceived(${1:strCommand}, ${2:nCount}, ${3:tParams})$0",
+        "documentation": "Function called by Director when List items or List MIB Commands are received. List MIBs are how Director communicates lists, end, and updated items. \r\n\r\n    \r\n - MIB Command that was received. Typical MIB Commands include:\r\n    \r\n “c4.ln.gi”, “c4.ln.le”, and “c4.ln.si”. They are described in more detail in the Remarks\r\n    \r\n section.\r\n    \r\n- Count of the items in the tParams table.\r\n    \r\n - Table of values for the MIB Command that was received.\r\n    \r\nMIB Descriptions:\r\n    \r\n – GetItems return. This MIB indicates that you called C4:ListGetItems, and this\r\n    \r\n – Updated Item. This MIB indicates that an item in your current list has been\r\n    \r\n updated. This could happen if you were looking at a list of lights, and one of them was\r\n    \r\n switched on or off, or if your music queue changed while looking at the music queue.\r\n \r\n    \r\nAny items that need updating are encoded the same as items in c4.ln.gi above.\r\n    \r\n – List End. This MIB indicates that the list has ended. Typically you will receive\r\n \r\n    \r\nthis MIB when the user has backed all the way out of the menu, or if you call",
+        "detail": "1.6.1",
+        "parameters": [
+            "strCommand",
+            "nCount",
+            "tParams"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "ListNewControl",
+        "insertText": "ListNewControl(${1:strContainer}, ${2:strNavID}, ${3:idDevice}, ${4:tParams})$0",
+        "documentation": "Function called by Director when you have selected a ‘Control’. Controls are pages used on a List Navigator to control a specific item, like a light level or the volume of an audio zone. \r\n\r\n    \r\nstrContainer- Container (page) you wish to start the list on. An empty string or no parameter equals starting\r\n    \r\nat the main list menu. Valid string values for containers include: \r\n    \r\n    \r\nlocations\r\n    \r\n    \r\nlisten\r\n    \r\n    \r\nwatch\r\n    \r\n    \r\nlighting\r\n    \r\n    \r\ncomfort\r\n    \r\n    \r\nsecurity\r\n    \r\n    \r\ninfo\r\n    \r\nstrNavID\r\n    \r\n    \r\nNavigator ID of the control. Used to determine what action to take or what\r\n    \r\n    \r\ncontrol to display when ListNewControl is called.\r\n    \r\nidDevice\r\n    \r\n    \r\nDevice ID of the device that should be controlled.\r\n    \r\ntParams\r\n    \r\n    \r\nParameters of the device. For example, for a light being selected, a call to\r\n    \r\n    \r\nListNewControl is sent with the following parameters:\r\n    \r\n    \r\n  LEVEL – The light’s current level\r\n    \r\n    \r\n  NAME – The name of the light \r\n    \r\n    \r\n  IS_DIMMER – to know whether it can be dimmed or not.",
+        "detail": "1.6.1",
+        "parameters": [
+            "strContainer",
+            "strNavID",
+            "idDevice",
+            "tParams"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "ListNewList",
+        "insertText": "ListNewList(${1:nListID}, ${2:nItemCount}, ${3:strName}, ${4:nIndex}, ${5:strContainer}, ${6:strCategory}, ${7:strNavID})$0",
+        "documentation": "Function called by Director when a new List Navigator List has been requested by the DriverWorks driver and successfully opened by Director. It is called in response to: \r\nNone\r\n    \r\n - ListID is a number used by List Navigator to track which list you are currently\r\n    \r\nviewing. It is required to request more items from the list, and when you select an item\r\n \r\n    \r\nin the list.\r\n    \r\n - ItemCount is the number of items in this list. This is typically displayed\r\n    \r\n - Name of this list. This is typically displayed on the top line of the display,\r\n    \r\n - Selected index in the list. For lists that are being selected, this will typically be 0. For lists that are received from a ‘list back (c4.ln.lb)’ command, \r\n    \r\nit will be the list index that was selected.\r\n    \r\n - Container is similar to Category, and can be used to determine where the\r\n    \r\nuser is in the list, to decide when to pop up a control.\r\n    \r\n - Category of the list. This includes things like ‘audio’, ‘house’, ‘locations’,\r\n \r\n    \r\netc.\r\n    \r\n - Navigator ID of this list. Not typically used, may be ‘Unknown’.\r\n    \r\nListNewList is received when the list is opened, but no list items are returned. To",
+        "detail": "1.6.1",
+        "parameters": [
+            "nListID",
+            "nItemCount",
+            "strName",
+            "nIndex",
+            "strContainer",
+            "strCategory",
+            "strNavID"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnConnectionStatusChanged",
+        "insertText": "OnConnectionStatusChanged(${1:idBinding}, ${2:nPort}, ${3:strStatus})$0",
+        "documentation": "Function based on this return from the system used by weatherbug driver to process the communication.\r\nThe following example comes from:\r\nweatherbug.c4i",
+        "detail": "1.6.1",
+        "parameters": [
+            "idBinding",
+            "nPort",
+            "strStatus"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnDriverDestroyed",
+        "insertText": "OnDriverDestroyed(${1:})$0",
+        "documentation": "Called when a driver is deleted from a project, updated within a project or Director is shut down. All of the driver's timers will be killed within the OnDriverDestroyed function.",
+        "detail": "1.6.1",
+        "parameters": [
+            ""
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnEndDebugSession",
+        "insertText": "OnEndDebugSession()$0",
+        "documentation": "Function called by Director when remote debugging of the DriverWorks script has ended.\r\n    \r\nNone\r\n    \r\nNone",
+        "detail": "1.6.1",
+        "parameters": null,
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnNetworkBindingChanged",
+        "insertText": "OnNetworkBindingChanged(${1:idBinding}, ${2:bIsBound})$0",
+        "documentation": "Function called by Director when a network connection has been addressed (‘identified’ on Network Connections Page) or unaddressed (‘disconnect’).",
+        "detail": "1.6.1",
+        "parameters": [
+            "idBinding",
+            "bIsBound"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnPropertyChanged",
+        "insertText": "OnPropertyChanged(${1:strName})$0",
+        "documentation": "Function called by Director when a property changes value.\r\n\r\n    \r\nAn example function used to process property value changes. This example can be found in: DriverWorks_232_template_security.c4i",
+        "detail": "1.6.1",
+        "parameters": [
+            "strName"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnReflashLockGranted",
+        "insertText": "OnReflashLockGranted(${1:})$0",
+        "documentation": "Function called by Director when a Zigbee device grants communication access. Ensures that the driver is the only one currently granted permission to update the device.",
+        "detail": "1.6.1",
+        "parameters": [
+            ""
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnReflashLockRevoked",
+        "insertText": "OnReflashLockRevoked(${1:})$0",
+        "documentation": "Function called by Director when a driver loses permission to perform a device update.",
+        "detail": "1.6.1",
+        "parameters": [
+            ""
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnServerConnectionStatusChanged",
+        "insertText": "OnServerConnectionStatusChanged(${1:nHandle}, ${2:nPort}, ${3:strStatus})$0",
+        "documentation": "This function gets called when Server Socket connection status has changed.",
+        "detail": "1.6.1",
+        "parameters": [
+            "nHandle",
+            "nPort",
+            "strStatus"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnServerDataIn",
+        "insertText": "OnServerDataIn(${1:nHandle}, ${2:strData}, ${3:strclientAddress}, ${4:strPort})$0",
+        "documentation": "This function gets called when data is coming in on an open Server Socket.",
+        "detail": "1.6.1",
+        "parameters": [
+            "nHandle",
+            "strData",
+            "strclientAddress",
+            "strPort"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnTimerExpired",
+        "insertText": "OnTimerExpired(${1:idTimer})$0",
+        "documentation": "Function called by Director when the specified Control4 timer expires.",
+        "detail": "1.6.1",
+        "parameters": [
+            "idTimer"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnVariableChanged",
+        "insertText": "OnVariableChanged(${1:strName})$0",
+        "documentation": "Function called by Director when one of this driver’s variables’ values is changed.",
+        "detail": "1.6.1",
+        "parameters": [
+            "strName"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnWatchedVariableChanged",
+        "insertText": "OnWatchedVariableChanged(${1:idDevice}, ${2:idVariable}, ${3:strValue})$0",
+        "documentation": "Function called by Director when a Control4 variable changes value.",
+        "detail": "1.6.1",
+        "parameters": [
+            "idDevice",
+            "idVariable",
+            "strValue"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnZigbeeOnlineStatusChanged",
+        "insertText": "OnZigbeeOnlineStatusChanged(${1:strStatus}, ${2:strVersion}, ${3:strSkew})$0",
+        "documentation": "strStatus\r\n    \r\n    \r\nstrVersion\r\n    \r\nstrSkew",
+        "detail": "1.6.1",
+        "parameters": [
+            "strStatus",
+            "strVersion",
+            "strSkew"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnZigbeePacketFailed",
+        "insertText": "OnZigbeePacketFailed(${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:ndestinationEndpoint})$0",
+        "documentation": "Return function upon the unsuccessful delivery of a data packet.\r\nNone\r\n    \r\nstrPacket - ZigBee supported user data received from the ZigBee device.\r\n    \r\nnProfileID\r\nnClusterID - Source Cluster library included within the Profile\r\n    \r\nnGroupID - Zigbee device group identification\r\n    \r\nnSouceEndpoint - Endpoint designated as the source of the data packet delivery.\r\n    \r\nnDestinationEndpoint - Endpoint designated as the recipient of the data packet delivery.\r\n    \r\nThe following parameters are ignored when using the Control 4 (Embernet) Zigbee stack: \r\n    \r\nPacket data is still sent in the strPacket parameter. If using ZigBee Pro, all data (including\r\n    \r\nstrPacket) must conform to ZigBee Pro format.",
+        "detail": "1.6.1",
+        "parameters": [
+            "strPacket",
+            "nProfileID",
+            "nClusterID",
+            "nGroupID",
+            "nSourceEndpoint",
+            "ndestinationEndpoint"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnZigbeePacketIn",
+        "insertText": "OnZigbeePacketIn(${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:ndestinationEndpoint})$0",
+        "documentation": "Receives an unsolicited zigbee packet from the device or a response to a command that was sent.\r\nNone\r\n    \r\nstrPacket - ZigBee supported user data received from the ZigBee device.\r\n    \r\nnProfileID\r\nnClusterID - Source Cluster library included within the Profile\r\n    \r\nnGroupID - Zigbee device group identification\r\n    \r\nnSouceEndpoint - Endpoint designated as the source of the data packet delivery.\r\n    \r\nnDestinationEndpoint - Endpoint designated as the recipient of the data packet delivery.\r\n    \r\nThe following parameters are ignored when using the Control 4 (Embernet) Zigbee stack: \r\n    \r\nPacket data is still sent in the strPacket parameter. \r\n    \r\nIf using ZigBee Pro, all data (including strPacket) must conform to ZigBee Pro format.",
+        "detail": "1.6.1",
+        "parameters": [
+            "strPacket",
+            "nProfileID",
+            "nClusterID",
+            "nGroupID",
+            "nSourceEndpoint",
+            "ndestinationEndpoint"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "OnZigbeePacketSuccess",
+        "insertText": "OnZigbeePacketSuccess(${1:strPacket}, ${2:nProfileID}, ${3:nClusterID}, ${4:nGroupID}, ${5:nSourceEndpoint}, ${6:ndestinationEndpoint})$0",
+        "documentation": "Return function upon the successful delivery of a data packet\r\nNone\r\nstrPacket - ZigBee supported user data received from the ZigBee device.\r\n    \r\nnProfileID\r\nnClusterID - Source Cluster library included within the Profile\r\n    \r\nnGroupID - Zigbee device group identification\r\n    \r\nnSouceEndpoint - Endpoint designated as the source of the data packet delivery.\r\n    \r\nnDestinationEndpoint - Endpoint designated as the recipient of the data packet delivery.\r\n    \r\nThe following parameters are ignored when using the Control 4 (Embernet) Zigbee stack:\r\n    \r\nPacket data is still sent in the strPacket parameter. \r\n    \r\nIf using ZigBee Pro, all data (including strPacket) must conform to ZigBee Pro format.",
+        "detail": "1.6.1",
+        "parameters": [
+            "strPacket",
+            "nProfileID",
+            "nClusterID",
+            "nGroupID",
+            "nSourceEndpoint",
+            "ndestinationEndpoint"
+        ],
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    },
+    {
+        "label": "ReceivedAsync",
+        "insertText": "ReceivedAsync()$0",
+        "documentation": "ticketId – Number representing the data ticket\r\nstrData – String representing the data contained in the ticket",
+        "detail": "1.6.1",
+        "parameters": null,
+        "deprecated": false,
+        "kind": 2,
+        "type": 1
+    }
+]
