@@ -1,3 +1,6 @@
+# DEPRECATED
+See https://github.com/annex4-inc/vscode-control4-ext
+
 # VS Code Control4 Extension
 
 Includes basic auto-completion of Control4 functions and hooks. Will eventually support building a driver with supplied Lua and XML files via Driver Packager.
